@@ -9,11 +9,11 @@ from dagster import MetadataValue, OpExecutionContext, asset
 SCHEDULE_NAME = "daily run"
 
 safe_schedule_name = SCHEDULE_NAME.replace(" ", "_")
-url = os.getenv("URL")
+url = os.getenv("ParadimeBoltApiUrl")
 headers = {
     "Content-Type": "application/json",
-    "X-API-KEY": os.getenv("X-API-KEY"),
-    "X-API-SECRET": os.getenv("X-API-SECRET"),
+    "X-API-KEY": os.getenv("ParadimeBoltApiKey"),
+    "X-API-SECRET": os.getenv("ParadimeBoltApiSecret"),
 }
 
 
