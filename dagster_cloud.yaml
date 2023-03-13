@@ -1,4 +1,4 @@
 locations:
 - code_source:
-    package_name: quickstart_etl
+    package_name: quickstart_bolt
   location_name: dagster-demo

@@ -16,4 +16,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.dagster]
-module_name = "quickstart_etl"
+module_name = "quickstart_bolt"
