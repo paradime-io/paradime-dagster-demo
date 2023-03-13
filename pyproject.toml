@@ -1,6 +1,19 @@
+[tool.poetry]
+name = "paradime-dagster-demo"
+version = "0.1.0"
+description = "Paradime bolt demo using Dagster"
+authors = ["Kaustav Mitra <kaustav@paradime.io>"]
+readme = "README.md"
+packages = [{include = "paradime-dagster_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dagster = "^1.2.1"
+dagit = "^1.2.1"
+
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.dagster]
 module_name = "quickstart_etl"
